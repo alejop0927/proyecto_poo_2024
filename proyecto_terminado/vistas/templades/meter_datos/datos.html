@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Subir Audio</title>
+</head>
+<body>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        Nombre del audio: <input type="text" name="nombre"><br>
+        Artista: <input type="text" name="artista"><br>
+        Selecciona la imagen: <input type="file" name="imagen" accept="image/*"><br>
+        Selecciona el archivo de audio: <input type="file" name="audio" accept="audio/*"><br>
+        <input type="submit" value="Subir Audio">
+    </form>
+</body>
+</html>

@@ -1,0 +1,115 @@
+body {
+    background-color: rgb(255, 255, 254);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.header-container {
+    display: flex;
+    align-items: center;
+    background-color: red; 
+   
+}
+
+
+#header_principal h1 {
+    color: azure;
+    margin: 0; 
+    text-align: center;
+    align-items: center;
+   
+}
+
+
+nav {
+    position: relative;
+    background-color: #333;
+}
+
+
+.menu-button {
+    display: block;
+    color: white;
+    padding: 14px 20px;
+    text-align: left;
+    background-color: red;
+    cursor: pointer;
+}
+
+.menu-button:hover {
+    background-color: darkred;
+}
+
+
+#menu-toggle {
+    display: none;
+}
+
+
+.menu {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color:gray;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 200px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.menu li {
+    display: block;
+}
+
+.menu li a {
+    color: rgb(21, 21, 21);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.menu li a:hover {
+    background-color: #f9f7f7;
+}
+
+
+#menu-toggle:checked ~ .menu {
+    display: block;
+}
+
+
+.menu-icon {
+    width: 30px;
+    vertical-align: middle;
+}
+
+
+
+
+#content {	
+	max-width: 1180px;
+
+	top: 60px;
+	margin: 0 auto;
+	background-color: #fff;
+	padding: 2%;
+}
+
+#content header{	
+	height: 80px;
+	padding: 10px 20px;
+	background-color: #ddd;
+	border-radius: 1em;	
+}
+
+#principal {	
+	width: 40%;
+	float: left;
+	padding: 5px;
+}
+
+

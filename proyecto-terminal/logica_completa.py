@@ -29,17 +29,32 @@ class Lista_reproduccion(Cancion):
             self._verificar_lista_creada()
             return False
          elif len(self.lista_reproduccion_canciones) == 1:
-             print(f"la lista de reproduccion es {list(self.lista_reproduccion_canciones.items())[0]}")
+             print(f"Lista de reproducción: {self.nombre_lista} - {self.descripcion}")
          else:
-             print(f"las listas de reproduccion que hay son {list(self.lista_reproduccion_canciones.items())}")
+             print( f"- {Cancion.nombre_cancion} de {Cancion.nombre_autor}")
 #verifica cancion repetida
      def _verificar_cancion_lista(self, nombre_lista, cancion):
-       if  nombre_lista in self.lista_reproduccion_canciones:
+         if  nombre_lista in self.lista_reproduccion_canciones:
            if 'canciones' in self.lista_reproduccion_canciones[nombre_lista]:
                for c in self.lista_reproduccion_canciones[nombre_lista]['canciones']:
                    if c.nombre_cancion == cancion.nombre_cancion and c.nombre_autor == cancion.nombre_autor:
-                   
-              
+                      pass
+
+
+class Catalogo_canciones(Cancion):
+    def verificar_cancion(self,i:str):
+       if i in Cancion.nombre_cancion:
+           print(f"la letra pertenece a la Cancion{self.nombre_cancion}")
+           return True
+       else:
+           print("no hay ninguna cancion con esa letra")
+           return False
+     
+    def buscar_cancion(self,nombre_texto:str):
+        pass
+
+         
+
                
           
           
